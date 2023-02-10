@@ -20,11 +20,12 @@ type Server =  {
   last_update_attempt: string
 };
 const FIELD_NAMES = ["ip","gamespyport","hostport","hostname","mapname","gametype","numplayers","maxplayers","violence","timelimit","fraglimit","dmflags","movescale","cheats","ctf_loops","suicide_penalty","country","last_update_success","last_update_attempt"]
-export default function serverListToJson(data) {
+function serverListToObject(data:string) {
 
-  servers = {};
+  console.assert(typeof data == "string", "data passed to serverListToJson not string")
+  let servers = {};
 
-  const lines = input.split("\n");
+  const lines = data.split("\n");
   for (const line of lines) {
     const fields = line.split("\\");
     const s = fields.reduce((acc, value, index) => {
@@ -36,3 +37,6 @@ export default function serverListToJson(data) {
   }
   return servers;
 }
+
+
+export {serverListToObject}

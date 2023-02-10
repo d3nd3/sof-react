@@ -6,7 +6,7 @@ import {
    useQueryClient,
  } from 'react-query'
 
-import serversToJson from './util'
+import serverListToObject from './util'
 
 
 // Access the client
@@ -31,8 +31,8 @@ function App() {
 
   const serverList = useQuery('megalag-server-list', async () => {
     // const res = await fetch('https://api.github.com/repos/tannerlinsley/react-query')
-    const res = await fetch('https://sof1.megalag.org/text/servers.txt')
-    const jsonr = serversToJson(res)
+    const res = await fetch('https://sof1.megalag.org/server/status/json/?version=1&ip=5.135.46.179&hostport=28916')
+    const jsonr = serverListToObject(res.json)
     console.log("done");
     return jsonr
   });
