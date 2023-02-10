@@ -8,9 +8,8 @@ jobs:
   get-request:
     runs-on: alpine-latest
     steps:
-      - run: apk add --no-cache wget
       - uses: actions/checkout@v3
-
+      - run: apk add --no-cache wget
       - run: wget http://sof1.megalag.org/text/server-list.txt -O ./api/serverlist.txt
 
       - uses: stefanzweifel/git-auto-commit-action@v4
