@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '/5 * * * *'
+    - cron:  '*/5 * * * *'
 jobs:
   get request:
     runs-on: alpine-latest
