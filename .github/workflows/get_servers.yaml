@@ -3,14 +3,16 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '/20 * * * *'
+    - cron:  '/5 * * * *'
 jobs:
   get request:
-    runs-on: 
+    runs-on: alpine-latest
     steps:
+      - run: apk add --no-cache wget
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+
+      - run: wget http://sof1.megalag.org/text/server-list.txt -O ./api/serverlist.txt
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+          commit_message: Server list changed
