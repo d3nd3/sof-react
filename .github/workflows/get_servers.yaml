@@ -2,9 +2,9 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   workflow_dispatch:
-  schedule:
+  # schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/20 * * * *'
+    # - cron:  '*/20 * * * *'
 jobs:
   get-request:
     runs-on: ubuntu-latest
