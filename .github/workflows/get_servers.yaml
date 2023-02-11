@@ -1,10 +1,10 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+name: fetch-web-data-dist
+run-name: performing http request to get a text file and commiting it with a squash
 on:
   workflow_dispatch:
-  # schedule:
+  schedule:
     # * is a special character in YAML so you have to quote this string
-    # - cron:  '*/20 * * * *'
+    - cron:  '*/20 * * * *'
 jobs:
   get-request:
     runs-on: ubuntu-latest
@@ -16,11 +16,12 @@ jobs:
 
       - run: mkdir api
       - run: touch api/.placeholder
-      - run: git status
       - run: git add api
       - run: sudo apt install wget && sudo apt clean && sudo rm -rf /var/lib/apt/lists/*
       - run: wget http://sof1.megalag.org/text/server-list.txt -O ./api/serverlist.txt
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: squash me
+      # squash the last 2 commits
+      -run: git rebase --onto HEAD~2 HEAD~1
 
