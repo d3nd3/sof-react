@@ -23,5 +23,5 @@ jobs:
         with:
           commit_message: squash me
       # squash the last 2 commits
-      -run: git rebase --onto HEAD~2 HEAD~1
+      - run: git rebase --onto HEAD~2 HEAD~1
 
