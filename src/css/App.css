@@ -1,0 +1,25 @@
+#root {
+  height: 100%;
+
+}
+
+.app {
+
+  display: grid;
+
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  
+
+/*  IMPLICIT GROWS DOWN-WARDS */
+  grid-auto-flow: column;
+/*  align-content: start;*/
+
+}
+
+
+
+
+
+
+

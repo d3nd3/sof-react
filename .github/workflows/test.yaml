@@ -1,0 +1,22 @@
+name: test
+run-name: just a test
+on:
+  workflow_dispatch:
+
+jobs:
+  a-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: 'gh-pages'
+          ssh-key: ${{secrets.SOF_REACT_DEPLOY_KEY}}
+          fetch-depth: 0
+
+      - run: git status
+      - run: git log -n 5
+      - run: git log HEAD~1
+      - run: |
+          touch newfile.txt
+          git add newfile.txt
+          git commit --fixup=HEAD~1

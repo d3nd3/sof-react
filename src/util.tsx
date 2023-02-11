@@ -1,37 +1,20 @@
-type Server =  {
-  ip: string,
-  gamespyport: number,
-  hostport: number,
-  hostname: string,
-  mapname: string,
-  gametype: string,
-  numplayers: number,
-  maxplayers: number,
-  violence: number,
-  timelimit: number,
-  fraglimit: number,
-  dmflags: number,
-  movescale: number,
-  cheats: number,
-  ctf_loops: number,
-  suicide_penalty: number,
-  country: string,
-  last_update_success: string,
-  last_update_attempt: string
-};
-const FIELD_NAMES = ["ip","gamespyport","hostport","hostname","mapname","gametype","numplayers","maxplayers","violence","timelimit","fraglimit","dmflags","movescale","cheats","ctf_loops","suicide_penalty","country","last_update_success","last_update_attempt"]
-function serverListToObject(data:string) {
+import {Servers, Server} from './types'
 
-  console.assert(typeof data == "string", "data passed to serverListToJson not string")
-  let servers = {};
+const FIELD_NAMES: string[] = ["ip","gamespyport","hostport","hostname","mapname","gametype","numplayers","maxplayers","violence","timelimit","fraglimit","dmflags","movescale","cheats","ctf_loops","suicide_penalty","country","last_update_success","last_update_attempt"]
+function serverListToObject(data:string) : Servers {
 
-  const lines = data.split("\n");
-  for (const line of lines) {
-    const fields = line.split("\\");
-    const s = fields.reduce((acc, value, index) => {
+  console.assert(typeof data == "string", "data passed to serverListToObject not string")
+  let servers : Servers = {};
+
+  // console.log(" data orig : " , data);
+  const all_servers = data.split("\n").slice(1);
+  // console.log("here: ",all_servers)
+  for (const a_server of all_servers) {
+    const fields = a_server.split("\\");
+    const s:Server = fields.reduce((acc: { [key: string]: string|number }, value: string|number, index: number) => {
       acc[FIELD_NAMES[index]] = value;
       return acc;
-    }, {});
+    }, {}) as Server;
 
     servers[s.ip + ":" + s.hostport] = s;
   }

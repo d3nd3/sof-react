@@ -9,5 +9,14 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+      window.onload = () => {
+        console.log("on load");
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM ready!");
+      });
+
+    </script>
   </body>
 </html>

@@ -1,0 +1,48 @@
+.sidebar-container {
+/*grid-child stuff*/
+	align-self: start;
+	position: sticky;
+	top: 0;
+
+	height: 100vh;
+	background-color: cyan;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.sidebar {
+	flex-basis: 100%;
+
+	display: flex;
+	background-color: pink;
+	flex-flow:column;
+
+	align-items: center;
+	justify-content: center;
+}
+.sidebar > ul {
+	display: flex;
+	flex-flow:column;
+	flex-basis: 100%;
+	justify-content: space-evenly;
+/*	gap: 1rem;*/
+	padding: 0;
+}
+
+.sidebar > ul > li {
+	list-style-type: none;
+	font-size: 1.8rem;
+}
+.sidebar > * {
+/*	flex-grow: 1;*/
+}
+
+.sidebarr {
+	display: flex;
+	flex-flow: column;
+	background-color: green;
+}
+
+.sidebarr > * {
+	flex-grow: 1;
+}
