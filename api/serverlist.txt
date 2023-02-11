@@ -1,186 +1,20 @@
-﻿Active servers:
-IP:port               | Gametype  | Name
-----------------------+-----------+------------------------------
-5.135.46.179:28916    | CTF       | (#1)SERVER
-99.192.52.108:28950   | DM        | After The Burial(lobby)
-5.135.46.179:28912    | Arsenal   | Arsenal-Megalag[UT-Sounds]
-94.23.195.203:28912   | Assassin  | Assassin Bastards
-45.3.12.200:28910     | CTF       | Bastard's Corner
-45.3.27.104:28910     | CTF       | Bastard's Corner
-51.75.130.126:28910   | CTF       | Bastard's Corner 2
-94.23.195.203:28914   | DM        | Bastard's Corner DM
-94.23.195.203:28916   | Team CTB  | Bastards on the Bunker
-102.66.192.86:17242   | DM        | CGZA - SoF Deathmatch
-213.184.111.80:20000  | DM        | ChAoS Unlimited Fire DM Fiber
-99.192.52.108:28930   | COOP      | Cooperative Mission
-99.192.52.108:28920   | COOP      | Cooperative Mission (Single Player)
-5.135.46.179:28920    | CTF       | Free Server Mode - CTF (unclaimed)
-5.135.46.179:28922    | DM        | Free Server Mode - DM (unclaimed)
-5.135.46.179:28914    | DM        | Lag DM
-5.135.46.179:28910    | DM        | Mad Onion
-93.234.58.55:28910    | DM        | MHP-Clan.de
-50.107.98.75:28910    | DM        | * * * S H M O O  ' S   G A M E * * * 
-5.135.46.179:28926    | CTF       | [$$] , !CTF! & [Ç#] SerVer
-5.135.46.179:28918    | DM        | UT 1995
-
-Inactive servers:
-Offline  | IP:port               | Gametype  | Name
----------+-----------------------+-----------+------------------------------
-36 days  | 47.55.42.167:28950    | DM        | After The Burial-[Lobby]
-4 days   | 45.3.12.200:28912     | Assassin  | Assassin Bastards
-4 days   | 45.3.20.254:28912     | Assassin  | Assassin Bastards
-24 days  | 45.3.0.180:28912      | Assassin  | Assassin Bastards
-25 days  | 45.3.16.202:28912     | Assassin  | Assassin Bastards
-29 days  | 24.50.191.203:28912   | Assassin  | Assassin Bastards
-32 days  | 24.50.169.4:28912     | Assassin  | Assassin Bastards
-33 days  | 24.50.179.12:28912    | Assassin  | Assassin Bastards
-97 days  | 24.50.170.83:28912    | Assassin  | Assassin Bastards
-15 days  | 99.192.52.108:28940   | CTF       | ATB-jpn
-4 days   | 94.23.195.203:28918   | CTF       | Bastard's Corner
-9 days   | 45.3.20.254:28910     | CTF       | Bastard's Corner
-11 days  | 45.3.6.51:28910       | CTF       | Bastard's Corner
-18 days  | 45.3.0.180:28910      | CTF       | Bastard's Corner
-22 days  | 94.23.195.203:28920   | CTF       | Bastard's Corner
-25 days  | 45.3.16.202:28910     | CTF       | Bastard's Corner
-29 days  | 24.50.191.203:28910   | CTF       | Bastard's Corner
-32 days  | 24.50.169.4:28910     | CTF       | Bastard's Corner
-33 days  | 24.50.179.12:28910    | CTF       | Bastard's Corner
-33 days  | 24.50.190.106:28910   | CTF       | Bastard's Corner
-39 days  | 24.50.190.32:28910    | CTF       | Bastard's Corner
-44 days  | 24.50.184.37:28910    | CTF       | Bastard's Corner
-46 days  | 24.50.183.194:28910   | CTF       | Bastard's Corner
-53 days  | 45.3.29.145:28910     | CTF       | Bastard's Corner
-60 days  | 24.50.191.80:28910    | CTF       | Bastard's Corner
-61 days  | 24.50.178.222:28910   | CTF       | Bastard's Corner
-67 days  | 45.3.19.218:28910     | CTF       | Bastard's Corner
-68 days  | 45.3.25.19:28910      | CTF       | Bastard's Corner
-74 days  | 45.3.29.233:28910     | CTF       | Bastard's Corner
-78 days  | 45.3.25.42:28910      | CTF       | Bastard's Corner
-81 days  | 45.3.0.213:28910      | CTF       | Bastard's Corner
-88 days  | 24.50.165.63:28910    | CTF       | Bastard's Corner
-88 days  | 45.3.7.200:28910      | CTF       | Bastard's Corner
-92 days  | 45.3.26.194:28910     | CTF       | Bastard's Corner
-95 days  | 45.3.30.87:28910      | CTF       | Bastard's Corner
-96 days  | 24.50.170.83:28910    | CTF       | Bastard's Corner
-6 days   | 51.75.130.126:28918   | Arsenal   | Bastard's Corner Arsenal
-9 days   | 94.23.195.203:28910   | DM        | Bastard's Corner DM
-24 days  | 45.3.0.180:28916      | DM        | Bastard's Corner DM
-25 days  | 45.3.16.202:28916     | DM        | Bastard's Corner DM
-29 days  | 24.50.191.203:28916   | DM        | Bastard's Corner DM
-32 days  | 24.50.169.4:28916     | DM        | Bastard's Corner DM
-33 days  | 24.50.179.12:28916    | DM        | Bastard's Corner DM
-33 days  | 24.50.190.106:28916   | DM        | Bastard's Corner DM
-39 days  | 24.50.190.32:28916    | DM        | Bastard's Corner DM
-44 days  | 24.50.184.37:28916    | DM        | Bastard's Corner DM
-46 days  | 24.50.183.194:28916   | DM        | Bastard's Corner DM
-53 days  | 45.3.29.145:28916     | DM        | Bastard's Corner DM
-60 days  | 24.50.191.80:28916    | DM        | Bastard's Corner DM
-61 days  | 24.50.178.222:28916   | DM        | Bastard's Corner DM
-67 days  | 45.3.19.218:28916     | DM        | Bastard's Corner DM
-68 days  | 45.3.25.19:28916      | DM        | Bastard's Corner DM
-74 days  | 45.3.29.233:28916     | DM        | Bastard's Corner DM
-78 days  | 45.3.25.42:28916      | DM        | Bastard's Corner DM
-81 days  | 45.3.0.213:28916      | DM        | Bastard's Corner DM
-88 days  | 24.50.165.63:28916    | DM        | Bastard's Corner DM
-88 days  | 45.3.7.200:28916      | DM        | Bastard's Corner DM
-97 days  | 24.50.170.83:28916    | DM        | Bastard's Corner DM
-11 days  | 51.75.130.126:28912   | DM        | Bastard's Corner DM beeg guns
-24 days  | 45.3.0.180:28914      | Team CTB  | Bastards on the Bunker
-25 days  | 45.3.16.202:28914     | Team CTB  | Bastards on the Bunker
-29 days  | 24.50.191.203:28914   | Team CTB  | Bastards on the Bunker
-32 days  | 24.50.169.4:28914     | Team CTB  | Bastards on the Bunker
-33 days  | 24.50.179.12:28914    | Team CTB  | Bastards on the Bunker
-97 days  | 24.50.170.83:28914    | Team CTB  | Bastards on the Bunker
-1 day    | 102.66.197.13:17242   | DM        | CGZA - SoF Deathmatch
-1 day    | 102.66.82.215:17242   | DM        | CGZA - SoF Deathmatch
-7 days   | 102.66.178.246:17242  | DM        | CGZA - SoF Deathmatch
-7 days   | 102.66.190.40:17242   | DM        | CGZA - SoF Deathmatch
-7 days   | 154.66.252.196:17242  | DM        | CGZA - SoF Deathmatch
-7 days   | 102.66.85.241:17242   | DM        | CGZA - SoF Deathmatch
-7 days   | 102.66.140.145:17242  | DM        | CGZA - SoF Deathmatch
-7 days   | 102.66.82.38:17242    | DM        | CGZA - SoF Deathmatch
-8 days   | 213.172.148.30:17242  | DM        | CGZA - SoF Deathmatch
-8 days   | 102.66.185.147:17242  | DM        | CGZA - SoF Deathmatch
-31 days  | 102.66.190.226:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.192.128:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.187.172:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.85.253:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.87.95:17242    | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.87.236:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.192.133:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.86.135:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.190.174:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.87.194:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.187.120:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.187.236:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.187.88:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.178.38:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.192.118:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.185.171:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.86.18:17242    | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.187.78:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.185.156:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.190.45:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.192.105:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.187.51:17242   | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.192.240:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.185.236:17242  | DM        | CGZA - SoF Deathmatch
-38 days  | 102.66.190.35:17242   | DM        | CGZA - SoF Deathmatch
-40 days  | 102.66.190.38:17242   | DM        | CGZA - SoF Deathmatch
-11 days  | 51.75.130.126:28922   | Control   | Control this!
-36 days  | 47.55.42.167:28930    | COOP      | Cooperative Mission
-70 days  | 142.68.233.74:28930   | COOP      | Cooperative Mission
-73 days  | 159.2.111.158:28930   | COOP      | Cooperative Mission
-36 days  | 47.55.42.167:28920    | COOP      | Cooperative Mission (Single Player)
-70 days  | 142.68.233.74:28920   | COOP      | Cooperative Mission (Single Player)
-73 days  | 159.2.111.158:28920   | COOP      | Cooperative Mission (Single Player)
-9 days   | 51.75.130.126:28920   | CTF       | EURO Bastards
-30 days  | 94.212.73.226:28910   | CTF       | KõÐ»Sêrvêr –CTF
-11 days  | 51.75.130.126:28916   | Realistic | Let's get real
-57 days  | 80.132.154.94:28910   | DM        | MHP-Clan.de
-63 days  | 80.132.155.19:28910   | DM        | MHP-Clan.de
-1 day    | 34.159.103.18:28914   | CTF       | [Ç#] Server! CHwiZ-ClaN.1fr1.NeT
-6 days   | 34.155.184.209:28910  | CTF       | [Ç#] Server! CHwiZ-ClaN.1fr1.NeT
-10 days  | 34.89.90.157:28910    | CTF       | [Ç#] Server! CHwiZ-ClaN.1fr1.NeT
-23 days  | 172.104.241.117:28910 | CTF       | [Ç#] Server! CHwiZ-ClaN.1fr1.NeT
-5 days   | 50.107.92.39:28910    | DM        | * * * S H M O O  ' S   G A M E * * * 
-5 days   | 50.107.94.76:28910    | DM        | * * * S H M O O  ' S   G A M E * * * 
-6 days   | 50.107.101.198:28910  | DM        | * * * S H M O O  ' S   G A M E * * * 
-10 days  | 50.107.99.146:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-10 days  | 50.107.107.241:28910  | DM        | * * * S H M O O  ' S   G A M E * * * 
-12 days  | 50.107.89.47:28910    | DM        | * * * S H M O O  ' S   G A M E * * * 
-15 days  | 50.107.127.40:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-20 days  | 50.107.87.160:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-32 days  | 50.107.74.14:28910    | DM        | * * * S H M O O  ' S   G A M E * * * 
-34 days  | 50.107.118.171:28910  | DM        | * * * S H M O O  ' S   G A M E * * * 
-35 days  | 50.107.103.13:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-40 days  | 50.107.115.198:28910  | DM        | * * * S H M O O  ' S   G A M E * * * 
-42 days  | 50.107.77.254:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-44 days  | 50.107.72.75:28910    | DM        | * * * S H M O O  ' S   G A M E * * * 
-47 days  | 50.107.123.78:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-50 days  | 50.107.64.171:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-55 days  | 50.107.78.219:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-67 days  | 50.107.96.161:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-83 days  | 50.107.65.206:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-84 days  | 50.107.84.6:28910     | DM        | * * * S H M O O  ' S   G A M E * * * 
-84 days  | 50.107.91.40:28910    | DM        | * * * S H M O O  ' S   G A M E * * * 
-85 days  | 50.107.85.168:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-96 days  | 50.107.112.32:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-97 days  | 50.107.75.102:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-97 days  | 50.107.118.26:28910   | DM        | * * * S H M O O  ' S   G A M E * * * 
-97 days  | 50.107.127.134:28910  | DM        | * * * S H M O O  ' S   G A M E * * * 
-1 day    | 34.159.103.18:28916   | DM        | [Ç#] SHOTGUN & BOTS! SERVER
-6 days   | 34.155.184.209:28912  | DM        | [Ç#] SHOTGUN & BOTS! SERVER
-10 days  | 34.89.90.157:28912    | DM        | [Ç#] SHOTGUN & BOTS! SERVER
-23 days  | 172.104.241.117:28912 | DM        | [Ç#] SHOTGUN & BOTS! SERVER
-13 days  | 201.87.95.241:28910   | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-13 days  | 189.78.11.24:28910    | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-44 days  | 177.62.12.2:28910     | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-46 days  | 189.79.201.56:28910   | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-54 days  | 201.87.59.115:28910   | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-71 days  | 177.172.40.211:28910  | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-79 days  | 177.62.21.55:28910    | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-85 days  | 177.62.22.168:28910   | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-93 days  | 177.62.22.129:28910   | DM        | Temple Of Assassin BR - ***https://discord.gg/Ys4Fmj6dEB
-23 days  | 45.33.117.43:28910    | CTF       | THEDOGHOUSE
-22 days  | 51.75.130.126:28914   | Assassin  | Up Your Assassin
+ip\gamespyport\hostport\hostname\mapname\gametype\numplayers\maxplayers\violence\timelimit\fraglimit\dmflags\movescale\cheats\ctf_loops\suicide_penalty\country\last_update_success\last_update_attempt
+5.135.46.179\28911\28910\Mad Onion\dm/madrange\DM\0\32\63\20\0\4100\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+5.135.46.179\28913\28912\Arsenal-Megalag[UT-Sounds]\dm/nycctb2\Arsenal\0\32\63\20\0\4100\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+5.135.46.179\28915\28914\Lag DM\dm/plantdm\DM\0\32\63\20\0\4\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+5.135.46.179\28917\28916\	(#1)SERVER\dm/irqctf1\CTF\0\32\63\20\0\14612\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+5.135.46.179\28919\28918\UT 1995\dm/deuce_arena\DM\0\32\63\20\0\4620\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+5.135.46.179\28921\28920\Free Server Mode - CTF (unclaimed)\dm/irqctf1\CTF\0\32\63\20\0\10500\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+5.135.46.179\28923\28922\Free Server Mode - DM (unclaimed)\dm/labdm\DM\0\32\63\20\0\4356\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+5.135.46.179\28927\28926\[$$] , 	!CTF! & [�#] SerVer\dm/jpnctf1\CTF\0\32\63\20\0\10500\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+45.3.27.104\28911\28910\Bastard's Corner\dm/sudctf1\CTF\0\16\32\20\0\10500\100\0\10\2\ca\2023-02-11 02:39:56\2023-02-11 02:39:56
+50.107.98.75\28911\28910\* * * S H M O O  ' S   G A M E * * * \dm/nycctb2\DM\0\12\32\15\0\2828\100\0\10\2\us\2023-02-11 02:39:56\2023-02-11 02:39:56
+51.75.130.126\28911\28910\Bastard's Corner 2\dm/iraq_small2\CTF\0\16\63\20\0\10500\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+93.234.58.55\28911\28910\MHP-Clan.de\dm/sibcon1\DM\0\16\32\20\0\4356\100\0\10\2\de\2023-02-11 02:39:56\2023-02-11 02:39:56
+94.23.195.203\28913\28912\Assassin Bastards\dm/nycctb1\Assassin\0\16\63\20\75\8704\100\0\3\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+94.23.195.203\28915\28914\Bastard's Corner DM\dm/jpnctb1\DM\0\16\63\15\0\8196\100\0\10\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+94.23.195.203\28917\28916\Bastards on the Bunker\dm/nycctb1\Team CTB\0\16\63\20\500\43396\100\0\3\2\fr\2023-02-11 02:39:56\2023-02-11 02:39:56
+99.192.52.108\28921\28920\Cooperative Mission (Single Player)\tsr1\COOP\0\12\0\100\1\384\100\0\0\0\ca\2023-02-11 02:39:56\2023-02-11 02:39:56
+99.192.52.108\28931\28930\Cooperative Mission\dm/coop_mission_jungle\COOP\0\12\0\100\10\2440\100\0\0\0\ca\2023-02-11 02:39:56\2023-02-11 02:39:56
+99.192.52.108\28951\28950\After The Burial(lobby)\dm/snipersnest\DM\1\12\12\275\0\1803\100\0\0\0\ca\2023-02-11 02:39:56\2023-02-11 02:39:56
+102.66.192.86\17243\17242\CGZA - SoF Deathmatch\dm/raven\DM\0\16\32\15\0\4356\100\0\10\2\za\2023-02-11 02:39:56\2023-02-11 02:39:56
