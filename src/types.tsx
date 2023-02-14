@@ -1,4 +1,4 @@
-type Server =  {
+export type Server =  {
   ip: string,
   gamespyport: number,
   hostport: number,
@@ -20,6 +20,7 @@ type Server =  {
   last_update_attempt: string
 };
 
-type Servers = {
+export type Servers = {
   [key: string]: Server
 };
+

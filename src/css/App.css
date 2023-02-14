@@ -1,13 +1,13 @@
 #root {
   height: 100%;
-
 }
 
 .app {
+  height: 100%;
 
   display: grid;
 
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-rows: auto;
   
 

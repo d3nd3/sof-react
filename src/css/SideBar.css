@@ -1,20 +1,12 @@
-.sidebar-container {
-/*grid-child stuff*/
-	align-self: start;
+.sidebar {
 	position: sticky;
 	top: 0;
+	align-self: start;
 
-	height: 100vh;
-	background-color: cyan;
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-}
-.sidebar {
-	flex-basis: 100%;
+	height: 100%;
 
 	display: flex;
-	background-color: pink;
+	background-color: saddlebrown;
 	flex-flow:column;
 
 	align-items: center;
@@ -23,26 +15,20 @@
 .sidebar > ul {
 	display: flex;
 	flex-flow:column;
-	flex-basis: 100%;
-	justify-content: space-evenly;
-/*	gap: 1rem;*/
+	flex-basis: 90%;
+	justify-content: space-around;
+	align-items: center;
+/*	gap: 2rem;*/
 	padding: 0;
+/*	margin-top: 2rem;*/
 }
 
 .sidebar > ul > li {
 	list-style-type: none;
+	text-align: center;
 	font-size: 1.8rem;
-}
-.sidebar > * {
-/*	flex-grow: 1;*/
-}
-
-.sidebarr {
-	display: flex;
-	flex-flow: column;
-	background-color: green;
-}
-
-.sidebarr > * {
-	flex-grow: 1;
+	font-weight: 1000;
+	color: yellowgreen;
+	border: 4px solid darkgreen;
+/*	background-color: SaddleBrown;*/
 }

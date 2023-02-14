@@ -1,17 +1,17 @@
 import './css/SideBar.css'
 function Sidebar() {
 	return (
-		<div className="sidebar-container">
-			<div className="sidebar">
-				<ul>
-					<li>Item1</li>
-					<li>Item2</li>
-					<li>Item3</li>
-					<li>Item4</li>
-					<li>Item5</li>
-				</ul>
-			</div>
+
+		<div className="sidebar">
+			<ul>
+				<li>Server List</li>
+				<li>Maps</li>
+				<li>Skins</li>
+				<li>Mods</li>
+				<li>Contact</li>
+			</ul>
 		</div>
+	
 	);
 }
 
