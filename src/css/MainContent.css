@@ -28,3 +28,12 @@
 	font-weight: 1000;
 	color: yellowgreen;
 }
+.maincontent > button {
+/*  align-self: start;*/
+  height: 2rem;
+  background-color: darkolivegreen;
+  color: yellowgreen;
+  font-size: 1rem;
+  font-weight: 1000;
+  white-space: nowrap;
+}

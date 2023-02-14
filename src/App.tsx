@@ -37,6 +37,7 @@ function App() {
   //     element.style.backgroundColor = getRandomColor();
   //   });
   // });
+  const [menuOpen, setMenuOpen] = useState(true);
 
   const serverList = useQuery('megalag-server-list', async () => {
     console.log("useQueryApp")
@@ -61,12 +62,14 @@ function App() {
   // serverList.data.data.forEach(item => {
   //   console.log(item)
   // });
-  
+  let button = <button type="button" onClick={()=>setMenuOpen(!menuOpen)}>{menuOpen ? "Hide Menu" : "Show Menu"}</button>
+  let sidebar = <Sidebar button={button}/>;
   return (
       
-      <div className="app" style={{"backgroundColor": "black"}}>
-        <Sidebar />
-        <MainContent />
+      <div className={`app ${menuOpen ? "menu-is-open":"menu-is-closed"}`} style={{"backgroundColor": "black"}}>
+
+        { menuOpen && sidebar }
+        <MainContent menuOpen={menuOpen} button={button}/>
       </div>
   )
 }
