@@ -7,8 +7,9 @@
 
   display: grid;
 
+  /* 2 column, vert-flowing grid */
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: auto;
+  grid-template-rows: 100%;
   
 
 /*  IMPLICIT GROWS DOWN-WARDS */
