@@ -21,9 +21,9 @@ function App() {
   console.log("render App");
 
   // this ref is passed to SideBar
-  const childRef = useRef(null);
+  const childRef = useRef<HTMLDivElement>(null);
 
-  const [width,setWidth] = useState(null);
+  const [width,setWidth] = useState<number | null>(null);
   const [renderCounter,setRenderCounter] = useState(0);
   const adjustWidth = () => {
     setRenderCounter(renderCounter+1);
@@ -32,8 +32,6 @@ function App() {
   useEffect(() => {
     console.log("useEffect App")
     if ( childRef.current) {
-      console.log(childRef?.current?.offsetWidth)
-
       if (width) setWidth(0)
       else setWidth(childRef.current.offsetWidth)
     }
@@ -67,7 +65,7 @@ function App() {
 
   return (
       <div className="app" style={{marginLeft: `${width}px`}}>
-        <MenuButton squash={adjustWidth} ref={childRef} adjustWidth={adjustWidth}/>
+        <MenuButton adjustWidth={adjustWidth} ref={childRef} />
         <h1>Welcome to SoF1 FanPage.</h1>
         <div className="othercontent"> Other Content </div>
       </div>

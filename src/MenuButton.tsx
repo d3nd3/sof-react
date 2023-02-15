@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 import Sidebar from './Sidebar'
 
-const MenuButton = forwardRef( (props,ref) => {
+const MenuButton = forwardRef( (props:any,ref) => {
 	const [menuOpen, setMenuOpen] = useState(true)
 	
 	return (

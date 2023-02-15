@@ -2,7 +2,7 @@ import './css/SideBar.css'
 import {useRef, forwardRef} from 'react'
 
 // ref is shared with App Component
-const Sidebar = forwardRef( (props,ref) => {
+const Sidebar = forwardRef( (props:any,ref:any) => {
 
 	return (
 		<div className={`sidebar ${props.menuOpen ? 'open' : ''}`} ref={ref}>
