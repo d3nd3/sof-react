@@ -23,11 +23,24 @@ function App() {
   // this ref is passed to SideBar
   const childRef = useRef<HTMLDivElement>(null);
 
-  const [width,setWidth] = useState<number | null>(null);
+  const [width,setWidth] = useState<number | null>(0);
   const [renderCounter,setRenderCounter] = useState(0);
-  const adjustWidth = () => {
+  const [transitionsActive,setTransitionsActive] = useState(false);
+  // const [siteInitalised, setInitialised] = useState(false);
+  const intentFromButton = () => {
+    // trigger re-render
     setRenderCounter(renderCounter+1);
+    // enable Transitions
+    if ( renderCounter > 0) setTransitionsActive(true)
   }
+
+  // useEffect(() => {
+  //   let timeoutId = setTimeout(() => {
+  //     setInitialised(true);
+  //   }, 500); // Set a delay of 1 second before showing content
+
+  //   return () => clearTimeout(timeoutId);
+  // }, []); // Only run on mount
 
   useEffect(() => {
     console.log("useEffect App")
@@ -64,9 +77,9 @@ function App() {
 
 
   return (
-      <div className="app" style={{marginLeft: `${width}px`}}>
-        <MenuButton adjustWidth={adjustWidth} ref={childRef} />
-        <h1>Welcome to SoF1 FanPage.</h1>
+      <div className={`app ${transitionsActive ? 'transitions-on' : ''}`} style={{marginLeft: `${width}px`}}>
+        <MenuButton intentFromButton={intentFromButton} ref={childRef} />
+        <h1>Welcome to SoF1 FanPage</h1>
         <div className="othercontent"> Other Content </div>
       </div>
   )
