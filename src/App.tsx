@@ -1,5 +1,5 @@
 import './css/App.css'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState , useRef} from 'react';
 import {
    useQuery,
    useMutation,
@@ -11,34 +11,35 @@ import {serverListToObject} from './util'
 import {Servers, Server} from './types'
 
 import serverListText from './api/serverlist.txt'
+import MenuButton from "./MenuButton"
 
-import Sidebar from './Sidebar'
-import MainContent from './MainContent'
 
 
 // Access the client
 //const queryClient = useQueryClient()
 function App() {
   console.log("render App");
-  // useEffect( () => {
-  //   console.log("useEffectsApp");
-  //   let elements = document.querySelectorAll('.child') as NodeListOf<HTMLElement>;
 
-  //   function getRandomColor() {
-  //     let letters = '0123456789ABCDEF';
-  //     let color = '#';
-  //     for (let i = 0; i < 6; i++) {
-  //       color += letters[Math.floor(Math.random() * 16)];
-  //     }
-  //     return color;
-  //   }
+  // this ref is passed to SideBar
+  const childRef = useRef(null);
 
-  //   elements.forEach(element => {
-  //     element.style.backgroundColor = getRandomColor();
-  //   });
-  // });
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [width,setWidth] = useState(null);
+  const [renderCounter,setRenderCounter] = useState(0);
+  const adjustWidth = () => {
+    setRenderCounter(renderCounter+1);
+  }
 
+  useEffect(() => {
+    console.log("useEffect App")
+    if ( childRef.current) {
+      console.log(childRef?.current?.offsetWidth)
+
+      if (width) setWidth(0)
+      else setWidth(childRef.current.offsetWidth)
+    }
+    
+  },[renderCounter])
+  
   const serverList = useQuery('megalag-server-list', async () => {
     console.log("useQueryApp")
     // const res = await fetch('https://sof1.megalag.org/server/status/json/?version=1&ip=5.135.46.179&hostport=28916')
@@ -62,14 +63,13 @@ function App() {
   // serverList.data.data.forEach(item => {
   //   console.log(item)
   // });
-  let button = <button type="button" onClick={()=>setMenuOpen(!menuOpen)}>{menuOpen ? "Hide Menu" : "Show Menu"}</button>
-  let sidebar = <Sidebar button={button}/>;
-  return (
-      
-      <div className={`app ${menuOpen ? "menu-is-open":"menu-is-closed"}`} style={{"backgroundColor": "black"}}>
 
-        { menuOpen && sidebar }
-        <MainContent menuOpen={menuOpen} button={button}/>
+
+  return (
+      <div className="app" style={{marginLeft: `${width}px`}}>
+        <MenuButton squash={adjustWidth} ref={childRef} adjustWidth={adjustWidth}/>
+        <h1>Welcome to SoF1 FanPage.</h1>
+        <div className="othercontent"> Other Content </div>
       </div>
   )
 }

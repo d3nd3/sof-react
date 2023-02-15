@@ -1,0 +1,14 @@
+/*grid child of app*/
+.app > button {
+	justify-self: center;
+
+	margin-top: 1rem;
+/*	margin-left: 1rem;*/
+	
+	height: 2rem;
+	background-color: darkolivegreen;
+	color: yellowgreen;
+	font-size: 1rem;
+	font-weight: 1000;
+	white-space: nowrap;
+}

@@ -1,11 +1,11 @@
 import './css/SideBar.css'
+import {useRef, forwardRef} from 'react'
 
-import { useState } from "react";
+// ref is shared with App Component
+const Sidebar = forwardRef( (props,ref) => {
 
-function Sidebar({button}) {
 	return (
-		<div className="sidebar">
-			{button}
+		<div className={`sidebar ${props.menuOpen ? 'open' : ''}`} ref={ref}>
 			<ul>
 				<li>Server List</li>
 				<li>Maps</li>
@@ -14,7 +14,7 @@ function Sidebar({button}) {
 				<li>Contact</li>
 			</ul>
 		</div>
-	);
-}
+	)
+} )
 
-export default Sidebar;
+export default Sidebar
