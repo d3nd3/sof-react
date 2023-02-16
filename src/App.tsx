@@ -78,8 +78,10 @@ function App() {
 
   return (
       <div className={`app ${transitionsActive ? 'transitions-on' : ''}`} style={{marginLeft: `${width}px`}}>
-        <MenuButton intentFromButton={intentFromButton} ref={childRef} />
-        <h1>Welcome to SoF1 FanPage</h1>
+        <div className="titlebar">
+          <MenuButton intentFromButton={intentFromButton} ref={childRef} />
+          <h1>Welcome to <span style={{color:"yellowgreen"}}>S</span><span style={{color:"forestgreen"}}>o</span><span style={{color:"yellowgreen"}}>F</span><span style={{color:"forestgreen"}}>1</span> FanPage</h1>
+        </div>
         <div className="othercontent"> Other Content </div>
       </div>
   )

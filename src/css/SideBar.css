@@ -2,13 +2,21 @@
 .sidebar {
 	position: fixed;
 	top: 0;
+	/*https://bokand.github.io/demo/urlbarsize.html*/
+	/*https://developer.chrome.com/blog/url-bar-resizing/*/
+/*vh and lvh always large values, do not include the url bar*/
+/*on my mobile, 100%/100dvh fixed and 100dvh absolute work correctly*/
+
+/*idea set large only*/
+	height: 100vh;
+	height: 100lvh;
+
 
 	left: -200px;
 	
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	transition: left 0.5s ease-in-out;
 
-	height: 100%;
 
 	display: flex;
 	background-color: saddlebrown;
@@ -18,13 +26,15 @@
 .sidebar > ul {
 	display: flex;
 	flex-flow:column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-self: center;
+
+	flex-basis: 100%;
+/*	flex-grow: 1;*/
 
 	max-width: min-content;
 
-	flex-basis: 100%;
-
+	margin-bottom: 10rem;
 	padding: 0;
 /*	margin-top: 2rem;*/
 }
@@ -35,7 +45,7 @@
 	font-size: 1.5rem;
 	font-weight: 1000;
 	color: yellowgreen;
-	border: 4px solid darkgreen;
+	border: 4px solid forestgreen;
 /*	background-color: SaddleBrown;*/
 
 }

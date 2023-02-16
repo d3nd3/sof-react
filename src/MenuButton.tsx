@@ -21,7 +21,7 @@ const MenuButton = forwardRef( (props:any,ref) => {
 						props.intentFromButton()
 					}}
 				>
-					<FontAwesomeIcon style={{display: "inline",position: "relative",top: 0}} icon={menuOpen? faXmark : faBars } size="2xl" />
+					<FontAwesomeIcon style={{position: "relative",top: 0,left:0}} icon={menuOpen? faXmark : faBars } size="2xl" />
 				</button>
 				<Sidebar menuOpen={menuOpen} ref={ref}/>
 			</>

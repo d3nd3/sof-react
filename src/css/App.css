@@ -1,5 +1,5 @@
 #root {
-  background-color: darkolivegreen;
+  background-color: rgb(80,80,80);
 }
 
 .app {
@@ -19,7 +19,7 @@
 /*  align-content: start;*/
 
 
-  background-color: darkolivegreen;
+  background-color: rgb(80,80,80);
 
   place-items: center;
 
@@ -30,10 +30,13 @@
   transition: margin-left 0.5s ease-in-out;
 }
 
+.app > .titlebar {
+  display: flex;
 
-.app > h1 {
-  
-  border-bottom: 2px solid white;
+}
+
+.app > .titlebar > h1{
+  border-bottom: 4px solid saddlebrown;
 
   /* one line text*/
 /*  white-space: nowrap;*/
