@@ -1,0 +1,76 @@
+# sof-react — system overview
+# Zones left to right: entry points -> core -> state -> external.
+# Cross-zone links stay at zone level so TALA keeps children nested.
+# Style classes use strokes only, so light and dark stay readable.
+
+title: |md
+  # sof-react
+  A Vite + React front page for SoF1. The server list is a text file baked into the bundle by a cron job, not a live API.
+| {near: top-center}
+
+direction: right
+grid-columns: 2
+grid-rows: 2
+horizontal-gap: 260
+vertical-gap: 240
+
+entry: Entry points {
+  direction: down
+
+  index: index.html · one root div, logs on load and DOMContentLoaded
+  boot: main.tsx · QueryClient with focus refetch off, StrictMode, devtools
+  served: served from gh-pages · vite base is /sof-react/
+
+  index -> boot: mounts the app
+  boot -> served: static bundle, no server side
+}
+
+state: State {
+  direction: down
+
+  txt: api/serverlist.txt · imported as a raw text module at build time
+  cache: react-query · key megalag-server-list, staleTime 0
+  css: css files · .transitions-on added only after the first click
+}
+
+core: Core {
+  direction: down
+
+  app: App.tsx · fires the query, sets margin from the sidebar ref width
+  menu: MenuButton.tsx · bars or X icon, owns the open flag
+  sidebar: Sidebar.tsx · five li items, no router and no handlers
+  parse: util.tsx · serverListToObject splits lines then backslashes
+  types: types.tsx · Server shape, 19 positional fields
+
+  app -> menu: renders the toggle
+  menu -> sidebar: passes the forwarded ref
+  app -> parse: hands it the imported text
+  parse -> types: casts by field index
+}
+
+ext: External {
+  direction: down
+
+  site: sof1.megalag.org · text/server-list.txt, backslash separated
+  action: get_servers.yaml · cron every 20 min, wget, amend, push
+  pages: gh-pages branch · dist plus .nojekyll, deployed by npm run deploy
+
+  site -> action: raw dump pulled by wget
+  action -> pages: amends one commit and force-pushes
+}
+
+entry -> core: app mounts into root
+core -> state: reads the text once, cached for the session
+state -> ext: refreshed by the cron job, never by the browser
+
+classes: {
+  entry: {style: {stroke: "#2f6fbf"}}
+  core: {style: {stroke: "#2f8f5f"}}
+  state: {style: {stroke: "#a86a12"; stroke-dash: 3}}
+  ext: {style: {stroke: "#8a4fbf"; stroke-dash: 5}}
+}
+
+entry.class: entry
+core.class: core
+state.class: state
+ext.class: ext

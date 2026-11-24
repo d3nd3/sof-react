@@ -21,3 +21,4 @@ Visualise the current map.
 First view the servers are small items on screen.
 
 ViewChange Option. Tiled/Thumbnails
+Prefer pictures? Start with **[HUMANS.md](HUMANS.md)**.
